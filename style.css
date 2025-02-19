@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.main{
+    width:100%;
+    height:100vh;
+    /* background-color: yellow; */
+    position: relative;
+}
+.oval{
+    position: absolute;
+    top:-590px;
+    right:-200px;
+    width:700px;
+    height:1200px;
+    border-radius: 50%;
+    background-color: rgb(221, 215, 215);
+    border: none;
+    z-index:-1;
+}
+nav{
+    width:100%;
+    height:15%;
+    padding:20px 6vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height:90px;
+    width:100px;
+    /* background-color: red; */
+    background-image: url(logo\ of\ food.png);
+    background-size: cover;
+    background-position: center;
+ }
+ .nav_contain a{
+    text-decoration: none;
+    color:black;
+    margin-left:2vw;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: rgb(68, 6, 126);
+ }
+ .nav_contain a:hover{
+    color:rgb(166, 103, 224);
+ }
+ nav a::selection{
+    color: white;
+    background-color: black;
+}
+
+.icon i{
+    margin-left: 1.1vw;
+    font-size: 1.1rem;
+    color: rgb(49, 2, 92);
+ }
+ .main i:hover{
+    color:rgb(166, 103, 224);
+ }
+ .contain{
+    width:100%;
+    height:85%;
+    display: flex;
+ }
+ .left{
+    width:40%;
+    height:100%;
+    /* background-color: yellow; */
+    position: relative;
+ }
+ .left-contain{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+ }
+ .left .left-contain p{
+    font-family: "Roboto", serif;
+    font-size:0.9rem;
+    font-weight:800;
+    color: rgb(75, 27, 121);
+ }
+ .left .left-contain p i{
+    color:red;
+    font-size: 1.3rem;
+ }
+ .left .left-contain h2{
+    margin-top:7%;
+    font-family: "Poppins", serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: rgb(153, 88, 215);
+ }
+ .left .left-contain button{
+    margin-top:7%;
+    width:140px;
+    height:50px;
+    font-family: "Roboto", serif;
+    font-size:1rem;
+    font-weight:600;
+    letter-spacing: 0.8px;
+    background-color: #FFAE42;
+    color: white;
+    border:none;
+    border-radius: 6px;
+    
+ }
+ .right{
+    width:60%;
+    height:100%;
+    position: relative;
+    /* background-color: red; */
+    /* background-image: url(img-Photoroom.png);
+    background-size:cover;
+    background-position: center; */
+ }
+ .right .img{
+    width:500px;
+    height:400px;
+    position: absolute;
+    top:15%;
+    left:18%;
+    transform: rotatex(-20deg);
+    transform: rotatez(-15deg);
+    /* background-color: red;    */
+    background-image: url(chicken.png);
+    background-size:cover;
+    background-position: center;
+ }
+
+    .customer{
+        width:100%;
+        height:100%;
+        /* background-color: red; */
+        position: relative;
+    }
+    .left_customer{
+        width:65%;
+        height:100%;
+        /* background-color: rgb(195, 189, 182); */
+        background-image: url(https://thumbs.dreamstime.com/b/white-rough-dry-plaster-texture-curly-curved-lines-as-simple-abstract-background-164415018.jpg);
+        background-size: cover;
+        background-position: center;
+        position:relative;
+    }
+    .left_customer .left_main{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .left_customer .left_main > h2{
+        font-family: "Poppins", serif;
+        font-size: 1.7rem;
+        font-weight: 800;
+        color:rgb(63, 14, 108);
+    }
+    .left_customer .left_main p{
+        font-family: "Roboto", serif;
+    font-size:1.2rem;
+    font-weight:600;
+    text-align: justify;
+    margin-top:5%;
+    }
+    .left_customer .left_name{
+        margin-top:15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .left_customer .left_name .lleft{
+        line-height: 14px;
+    }
+    
+    .left_customer .left_main .left_name h2{
+        font-family: "Poppins", serif;
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: red;
+    }
+    .left_customer .left_name .lright i{
+        margin-left:1.1vw;
+        font-size: 1.1rem;
+        font-weight: 900;
+    }
+    .left_customer .left_name .lright #last{
+       color: red;
+    }
+    .right_customer{
+        width:30%;
+        height:90%;
+        position: absolute;
+        top:5%;
+        right:13%;
+        border:9px solid rgb(206, 206, 206);
+        /* background-color: yellow; */
+        background-image: url(https://plus.unsplash.com/premium_photo-1664875849194-0adbac28529f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fG1vZGVsfGVufDB8fDB8fHww);
+        background-size: cover;
+        background-position: center;
+    }
+ @media only screen and (min-width:600px) and (max-width:1000px){
+    .contain{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width:100%;
+    }
+    .right{
+        width:100%;
+    }
+    .right .img{
+        width:620px;
+        height:500px;
+    }
+ }
+
+ @media only screen and (min-width:450px) and (max-width:600px){
+    .nav_contain{
+        display:none;
+    }
+    .contain{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width:100%;
+    }
+    .right{
+        width:100%;
+    }
+    .right .img{
+        width:380px;
+        height:300px;
+        position: absolute;
+        top:7%;
+        left:16%;
+        transform: rotatex(-20deg);
+        transform: rotatez(-15deg);
+    }
+    .left_customer{
+        width:100%;
+        height:100%;
+        /* background-color: rgb(195, 189, 182); */
+        background-image: url(https://thumbs.dreamstime.com/b/white-rough-dry-plaster-texture-curly-curved-lines-as-simple-abstract-background-164415018.jpg);
+        background-size: cover;
+        background-position: center;
+        position:relative;
+    }
+    .left_customer .left_main{
+        position: absolute;
+        top:30%;
+        left:50%;
+        width:80%;
+        /* transform: translate(-50%,-50%); */
+    }
+
+    .right_customer{
+        /* display:none; */
+        position: absolute;
+        height:40%;
+        width:50%;
+        top:60%;
+        left:25%;
+    }
+   
+    /* mobile screen  */
+ }
+ @media only screen and (max-width:450px){
+    .icon i{
+        margin-left:4vw;
+    }
+    .nav_contain{
+        display:none;
+    }
+    .contain{
+        display: flex;
+        flex-direction: column;
+        height:77%;
+    }
+    .left{
+        width:100%;
+    }
+    .left-contain {
+        margin-top:4%;
+    }
+    .left-contain{
+        position: absolute;
+        top:50%;
+        left:51%;
+        width:80%;
+        /* transform: translate(-50%,-50%); */
+     }
+    .right{
+        width:100%;
+    }
+    .right .img{
+        width:320px;
+        height:200px;
+        position: absolute;
+        top:7%;
+        left:8%;
+        transform: rotatex(-20deg);
+        transform: rotatez(-15deg);
+    }
+    .left_customer{
+        width:100%;
+        height:100%;
+        /* background-color: rgb(195, 189, 182); */
+        background-image: url(https://thumbs.dreamstime.com/b/white-rough-dry-plaster-texture-curly-curved-lines-as-simple-abstract-background-164415018.jpg);
+        background-size: cover;
+        background-position: center;
+        position:relative;
+    }
+    .left_customer .left_main{
+        position: absolute;
+        top:30%;
+        left:50%;
+        width:100%;
+        padding: 30px;
+        /* transform: translate(-50%,-50%); */
+    }
+    .left_name .lright{
+        display:none;
+    }
+    .right_customer{
+        /* display:none; */
+        position: absolute;
+        height:30%;
+        width:50%;
+        top:65%;
+        left:25%;
+    }
+ }
+
