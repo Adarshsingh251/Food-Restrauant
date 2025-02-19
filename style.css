@@ -14,6 +14,10 @@ html,body{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+:root{
+    --para : "Poppins", serif;
+    --heading: "Roboto", serif;
+}
 .main{
     width:100%;
     height:100vh;
@@ -171,6 +175,21 @@ nav{
         font-size: 1.7rem;
         font-weight: 800;
         color:rgb(63, 14, 108);
+        position: relative;
+    }
+    .left_main > h2::after{
+        content:"";
+        position: absolute;
+        bottom:-3%;
+        left:0%;
+        width:50%;
+        height:10px;
+        /* background-color: red; */
+        background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+        background-size: cover;
+        background-position: center;
+        
+
     }
     .left_customer .left_main p{
         font-family: "Roboto", serif;
@@ -280,73 +299,141 @@ nav{
         top:60%;
         left:25%;
     }
-   
     /* mobile screen  */
  }
- @media only screen and (max-width:450px){
-    .icon i{
-        margin-left:4vw;
-    }
-    .nav_contain{
-        display:none;
-    }
-    .contain{
-        display: flex;
-        flex-direction: column;
-        height:77%;
-    }
-    .left{
-        width:100%;
-    }
-    .left-contain {
-        margin-top:4%;
-    }
-    .left-contain{
-        position: absolute;
-        top:50%;
-        left:51%;
-        width:80%;
-        /* transform: translate(-50%,-50%); */
-     }
-    .right{
-        width:100%;
-    }
-    .right .img{
-        width:320px;
-        height:200px;
-        position: absolute;
-        top:7%;
-        left:8%;
-        transform: rotatex(-20deg);
-        transform: rotatez(-15deg);
-    }
-    .left_customer{
-        width:100%;
-        height:100%;
-        /* background-color: rgb(195, 189, 182); */
-        background-image: url(https://thumbs.dreamstime.com/b/white-rough-dry-plaster-texture-curly-curved-lines-as-simple-abstract-background-164415018.jpg);
-        background-size: cover;
-        background-position: center;
-        position:relative;
-    }
-    .left_customer .left_main{
-        position: absolute;
-        top:30%;
-        left:50%;
-        width:100%;
-        padding: 30px;
-        /* transform: translate(-50%,-50%); */
-    }
-    .left_name .lright{
-        display:none;
-    }
-    .right_customer{
-        /* display:none; */
-        position: absolute;
-        height:30%;
-        width:50%;
-        top:65%;
-        left:25%;
-    }
- }
+
+.special{
+    width:100%;
+    height:100vh;
+    background-color: rgb(245, 245, 245);
+    /* background-color: yellow; */
+}
+.special .our_special{
+    height:20%;
+    width:100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+.special .our_special .inner_special{
+    height:100%;
+    width:50%;
+    /* background-color: green; */
+}
+.special .our_special .inner_special h1{
+    text-align: center;
+    color: rgb(45, 7, 80);
+    font-family: var(--heading);
+    font-weight: 700;
+    font-size: 3rem;
+    position: relative;
+}
+.special .our_special .inner_special h1::after{
+    content:"";
+    position: absolute;
+    bottom:-3%;
+    left:33%;
+    width:28%;
+    height:10px;
+    /* background-color: red; */
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+    background-position: center;
+}
+.special .our_special .inner_special p{
+    text-align: center;
+    color: rgb(100, 77, 121);
+    font-family: var(--para);
+    font-weight:600;
+    margin-top:3%;
+}
+.menu{
+    height:100%;
+    width:100%;
+    /* background-color: red; */
+    padding:4% 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .fullbox{
+    width:21%;
+    height:70%;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 11px black;
+    border-radius: 6px;
+    transition: all 1s 0s ease;
+  
+}
+.menu .fullbox:hover{
+    box-shadow: 1px 1px 27px black;
+}
+.menu .fullbox .top_img{
+    width:100%;
+    height:67%;
+    border-radius: 6px 6px 0px 0px;
+    /* background-color: yellow; */
+    background-image: url(https://images.unsplash.com/photo-1470324161839-ce2bb6fa6bc3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZCUyMGl0ZW18ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+.menu .fullbox2 .top_img{
+    background-image: url(https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb2QlMjBpdGVtfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+}
+.menu .fullbox3 .top_img{
+    background-image: url(https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNoaW5lc2UlMjBmb29kJTIwaXRlbXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.menu .fullbox4 .top_img{
+    background-image: url(https://plus.unsplash.com/premium_photo-1666318300789-667fba711a16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaW5lc2UlMjBmb29kJTIwaXRlbXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.menu .fullbox .bottom{
+    padding:10px 0.9vw;
+    width:100%;
+    height:15%;
+    /* background-color: green; */
+}
+.menu .fullbox .bottom h2{
+    font-family: var(--heading);
+    font-size: 1.2rem;
+}
+.menu .fullbox .bottom p{
+    font-family: var(--para);
+    font-size: 0.7rem;
+}
+.menu .fullbox .price{
+    height:15%;
+    width:100%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 1.5vw;
+}
+
+.menu .fullbox .price p{
+    font-family: var(--para);
+    font-weight: 600;
+    color:red;
+    font-size: 1.1rem;
+}
+.menu .fullbox .price button{
+    padding:8px 13px;
+    font-family: var(--heading);
+    font-weight:600;
+    font-size: 0.9rem;
+    /* background-color: #FFAE42; */
+    border:2px solid #FFAE42;
+    border-radius: 5px;
+}
+.menu .fullbox .price button:hover{
+    background-color: #FFAE42;
+    color: white;
+}
 

@@ -1,0 +1,121 @@
+@media only screen and (max-width:450px){
+    nav{
+        width:100%;
+        height:10%;
+    }
+    .icon i{
+        margin-left:4vw;
+    }
+    .nav_contain{
+        display:none;
+    }
+    .contain{
+        display: flex;
+        flex-direction: column;
+        height:77%;
+    }
+    .customer{
+        margin-top:10%;
+    }
+    .left{
+        width:100%;
+    }
+    .left-contain {
+        margin-top:4%;
+    }
+    .left-contain{
+        position: absolute;
+        top:50%;
+        left:51%;
+        width:80%;
+        /* transform: translate(-50%,-50%); */
+     }
+    .right{
+        width:100%;
+    }
+    .right .img{
+        width:380px;
+        height:270px;
+        position: absolute;
+        top:4%;
+        left:-1%;
+        transform: rotatex(-20deg);
+        transform: rotatez(-15deg);
+    }
+    .left_customer{
+        width:100%;
+        height:100%;
+        /* background-color: rgb(195, 189, 182); */
+        background-image: url(https://thumbs.dreamstime.com/b/white-rough-dry-plaster-texture-curly-curved-lines-as-simple-abstract-background-164415018.jpg);
+        background-size: cover;
+        background-position: center;
+        position:relative;
+    }
+    .left_customer .left_main{
+        position: absolute;
+        top:32%;
+        left:50%;
+        width:100%;
+        padding: 30px;
+        /* transform: translate(-50%,-50%); */
+    }
+    .left_name .lright{
+        display:none;
+    }
+    .right_customer{
+        /* display:none; */
+        position: absolute;
+        height:30%;
+        width:50%;
+        top:65%;
+        left:25%;
+    }
+    .special .our_special{
+        height:7%;
+        width:100%;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+    }
+    .special{
+        width:100%;
+        min-height:400vh;
+        margin-top:10%;
+        /* background-color: red; */
+    }
+    .special .our_special .inner_special p{
+        text-align: justify
+    }
+    .menu{
+        height:100vh;
+        width:100%;
+        /* background-color: red; */
+        padding:4% 10vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .menu .fullbox{
+        width:100%;
+        min-height:65%;
+        margin-top:15%;
+        background-color: whitesmoke;
+        box-shadow: 1px 1px 27px black;
+        border-radius: 6px;
+    }
+    .fullbox .bottom{
+        margin-left:8%;
+        /* background-color: red; */
+    }
+    .fullbox .price p{
+        margin-left:10%;
+    }   
+    .fullbox .price button{
+        margin-right:10%;
+    }  
+    .special .our_special .inner_special{
+        height:100%;
+        width:90%;
+        /* background-color: green; */
+    }
+ }
