@@ -6,6 +6,9 @@
     .main{
         background-color: rgb(236, 236, 82);
      }
+     .icon_input{
+        display:none;
+     }
     .icon i{
         margin-left:4vw;
     }
