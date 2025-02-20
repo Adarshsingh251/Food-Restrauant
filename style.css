@@ -135,7 +135,7 @@ nav{
  }
  .left .left-contain p{
     font-family: "Roboto", serif;
-    font-size:1.4rem;
+    font-size:1.2rem;
     /* font-size: 0.9; */
     font-weight:800;
     color: rgb(75, 27, 121);
@@ -147,7 +147,7 @@ nav{
  .left .left-contain h2{
     margin-top:7%;
     font-family: "Poppins", serif;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     /* font-size: 1.4rem; */
     font-weight: 800;
     color: rgb(153, 88, 215);
