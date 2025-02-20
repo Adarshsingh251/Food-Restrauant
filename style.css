@@ -100,7 +100,7 @@ nav{
     margin-left:2vw;
     font-family: "Roboto", serif;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: rgb(68, 6, 126);
  }
  .nav_contain a:hover{
@@ -109,7 +109,7 @@ nav{
 
 .icon i{
     margin-left: 1.1vw;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: rgb(49, 2, 92);
  }
  .main .icon i:hover{
