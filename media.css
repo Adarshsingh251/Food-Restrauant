@@ -51,6 +51,12 @@
         background-position: center;
         position:relative;
     }
+    .left .left-contain p{
+        font-family: "Roboto", serif;
+        font-size:0.9rem;
+        font-weight:800;
+        color: rgb(75, 27, 121);
+    }
     .left_customer .left_main{
         position: absolute;
         top:32%;

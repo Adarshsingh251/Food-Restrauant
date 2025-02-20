@@ -24,6 +24,22 @@ html,body{
     /* background-color: yellow; */
     position: relative;
 }
+.discount{
+    width:100%;
+    height:5%;
+    background-image: linear-gradient(to left, #00c6fb 0%, #005bea 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discount p{
+    font-family: var(--para);
+    font-weight:700;
+    font-size:1.1rem;
+    word-spacing: 0.3vw;
+    color:white;
+
+}
 .oval{
     position: absolute;
     top:-590px;
@@ -86,7 +102,7 @@ nav{
     display: flex;
  }
  .left{
-    width:40%;
+    width:55%;
     height:100%;
     /* background-color: yellow; */
     position: relative;
@@ -99,7 +115,7 @@ nav{
  }
  .left .left-contain p{
     font-family: "Roboto", serif;
-    font-size:0.9rem;
+    font-size:1.4rem;
     font-weight:800;
     color: rgb(75, 27, 121);
  }
@@ -110,7 +126,7 @@ nav{
  .left .left-contain h2{
     margin-top:7%;
     font-family: "Poppins", serif;
-    font-size: 1.4rem;
+    font-size: 2.3rem;
     font-weight: 800;
     color: rgb(153, 88, 215);
  }
@@ -129,7 +145,7 @@ nav{
     
  }
  .right{
-    width:60%;
+    width:45%;
     height:100%;
     position: relative;
     /* background-color: red; */
@@ -250,6 +266,15 @@ nav{
     .right .img{
         width:620px;
         height:500px;
+    }
+    .right .img{
+        width:500px;
+        height:300px;
+        position: absolute;
+        top:7%;
+        left:16%;
+        transform: rotatex(-20deg);
+        transform: rotatez(-15deg);
     }
  }
 
@@ -393,7 +418,27 @@ nav{
     background-position: center;
 }
 .menu .fullbox4 .top_img{
-    background-image: url(https://plus.unsplash.com/premium_photo-1666318300789-667fba711a16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaW5lc2UlMjBmb29kJTIwaXRlbXxlbnwwfHwwfHx8MA%3D%3D);
+    background-image: url(https://vaya.in/recipes/wp-content/uploads/2019/01/Hyderabadi-Egg-Dum-Biryani.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.menu .fullbox5 .top_img{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTGprnId_Ykr5g4UC0FmCND-t9y5dD6B1acA&s);
+    background-size: cover;
+    background-position: center;
+}
+.menu .fullbox6 .top_img{
+    background-image: url(https://abescakesandkitchen.com/uploads/productImage/product1716376284.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.menu .fullbox7 .top_img{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Dft9P7WYfNAQj0tWH319hfHA6qURgaL7Aw&s);
+    background-size: cover;
+    background-position: center;
+}
+.menu .fullbox8 .top_img{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDcH_MxdsTsK6KMVon-Ybfa2WiT-R70ZjWw&s);
     background-size: cover;
     background-position: center;
 }
@@ -406,6 +451,7 @@ nav{
 .menu .fullbox .bottom h2{
     font-family: var(--heading);
     font-size: 1.2rem;
+    text-transform: capitalize;
 }
 .menu .fullbox .bottom p{
     font-family: var(--para);
