@@ -6,6 +6,9 @@
     .main{
         background-color: rgb(236, 236, 82);
      }
+     .search_main{
+        display: none;
+     }
      .icon_input{
         display:none;
      }
