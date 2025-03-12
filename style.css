@@ -94,7 +94,21 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-
+nav  .icon .menus{
+    position: absolute;
+   visibility: hidden;
+}
+.side-menu{
+    position: absolute;
+    top:0;
+    right:-40%;
+    background-color: rgba(255, 255, 0, 0.396);
+    backdrop-filter: blur(10px);
+    height:100%;
+    width:40%;
+    font-family: var(--para);
+    font-weight: 600;
+}
 .logo{
     height:90px;
     width:100px;

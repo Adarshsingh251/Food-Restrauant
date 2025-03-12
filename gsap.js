@@ -75,3 +75,35 @@ main.addEventListener("mousemove",function(arr){
         duration:0.3
     })
 })
+
+let t3 = gsap.timeline();
+
+let menu  = document.querySelector(".menus");
+let cross  = document.querySelector(".cross");
+
+
+t3.from(".side-menu",{
+    x:500,
+    duration:0.5,
+    opacity:0,
+})
+t3.from(".side-menu a",{
+    x:300,
+    duration:0.6,
+    opacity:0,
+    stagger:0.2,
+})
+t3.from(".side-menu i",{
+    x:300,
+    duration:0.3,
+    opacity:0,
+    stagger:0.5,
+})
+t3.pause()
+
+menu.addEventListener("click",function(){
+    t3.play()
+})
+cross.addEventListener("click",function(){
+    t3.reverse()
+})
