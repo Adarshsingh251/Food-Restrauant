@@ -27,9 +27,43 @@
 
 // })
 // array.forEach(element => {
-    
+
 // });
 
-function bnt(){
+function bnt() {
     let a = document.addEventListener(".menu");
 }
+
+let btn = document.querySelector(".login_button");
+// let logins = document.querySelector(".login_container");
+let countes = 0;
+
+btn.addEventListener("click", function(){
+    if (countes == 0) {
+        gsap.to(".login_container", {
+            scale: 1,
+            opacity: 1,
+            duration: 1.6,
+        })
+        // countes = 1;
+    }
+    // else{
+    //     gsap.to(".main .login", {
+    //         scale: 0,
+    //         opacity: 0,
+    //         duration: 1,
+    //     })
+    //     countes = 0;
+    // }
+})
+
+// cross wala code hai
+let crosses = document.querySelector(".cross");
+
+crosses.addEventListener("click",function(){
+    gsap.to(".login_container", {
+        scale: 0,
+        opacity: 0,
+        duration: 1,
+    })
+})

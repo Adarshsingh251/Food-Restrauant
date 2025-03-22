@@ -6,22 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaju Bhai Food Dhaba | Food Anywhere</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="media.css">
-    <link rel="icon" href="https://www.myprivatetutor.com/files/profileimages/6c4e39fae3b3083cea3aefde05631481.jpg" type="image/x-icon">
-    
+    <link rel="icon" href="https://www.myprivatetutor.com/files/profileimages/6c4e39fae3b3083cea3aefde05631481.jpg"
+        type="image/x-icon">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="main">
+    <div class="login_container">
+        <div class="login">
+            <i class="fa-solid fa-circle-xmark cross"></i>
+            <form action="">
+                <input type="text" placeholder="Name" class="name b_radius" maxlength="20" required>
+                <div class="name_box">
+                    <input type="email" placeholder="Email" class="name b_radius">
+                    <input type="password" placeholder="password" class="name b_radius" maxlength="8">
+                </div>
+                <input type="tel" placeholder="Phone number" class="name b_radius pass" maxlength="10" required>
+                <button class="name b_radius">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="main" id="main_login">
 
         <div class="cursor"></div>
         <!-- shape divider app  -->
         <div class="custom-shape-divider-bottom-1740045624">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
             </svg>
         </div>
 
@@ -46,7 +66,7 @@
             </div>
             <div class="icon">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-user login_button"></i>
                 <i class="fa-solid fa-bag-shopping"></i>
                 <i class="fa-solid fa-bars menus"></i>
             </div>
@@ -207,7 +227,7 @@
             <div class="contact_right">
                 <a href="#"><i class="fa-solid fa-phone"></i> (+91) 7738275114</a>
                 <a href="#"><i class="fa-solid fa-envelope"></i> singhadarsh81181@gmail.com</a>
-                <a href="#"><i class="fa-solid fa-location-dot"></i>  Mumbai</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Mumbai</a>
             </div>
         </div>
         <footer>
@@ -215,8 +235,12 @@
         </footer>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="gsap.js"></script>
     <script src="index.js"></script>
 </body>

@@ -1,4 +1,26 @@
 @media only screen and (max-width:450px){
+    /* login screen ka code hai */
+    .login_container .login{
+        width: 90%;
+        height: 53%;
+        position: absolute;
+    }
+    .name_box{
+        height:100px;
+        display: flex;
+        gap:1px;
+        flex-direction: column;
+    }
+    .pass{
+        margin-top:12px;
+    }
+    .login_container .login i{
+        position: absolute;
+        top:-12%;
+        right:-2%;
+        cursor: pointer;
+    }
+    /* --------------------------------------------------------------------- */
     .cursor{
         display: none;
     }
