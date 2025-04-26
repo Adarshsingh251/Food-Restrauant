@@ -77,7 +77,7 @@ var swiper = new Swiper('.right_customer',{
     },
     // spaceBetween: 20,
     direction: 'horizontal', 
-    speed : 160,
+    speed : 1000,
     effect: 'cube',
     rotate: 50,
 })
