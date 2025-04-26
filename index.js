@@ -67,3 +67,17 @@ crosses.addEventListener("click",function(){
         duration: 1,
     })
 })
+
+/* adding swiper js */
+
+var swiper = new Swiper('.right_customer',{
+    loop:true,
+    autoplay: {
+        delay: 1000,
+    },
+    // spaceBetween: 20,
+    direction: 'horizontal', 
+    speed : 160,
+    effect: 'cube',
+    rotate: 50,
+})
